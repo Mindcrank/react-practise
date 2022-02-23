@@ -1,5 +1,5 @@
 import * as React from 'react';
-//import * as ReactDOM from 'react-dom'; commenting out as not needed yet
+import * as ReactDOM from 'react-dom';
 import { render } from 'react-dom';
 import { Component } from 'react';
 import './style.css';
@@ -33,9 +33,10 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <Container fluid>
+        <NavigationElements />
         <div>
           <Hello name={this.state.name} />
-          <NavigationElements />
+
           <p>Start editing to see some magic happen :)fdsfsdf</p>
           <RandoObj />
           <SchoolCard />
