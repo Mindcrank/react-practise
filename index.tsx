@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Components/Hello';
-import RandoObj from './Components/RandoObj';
 import './style.css';
 
-
-
+//My Components
+import Hello from './Components/Hello';
+import RandoObj from './Components/RandoObj';
 import BuildCard from './Components/BuildCard';
+//Fontawesome SVG icons
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { faChessRook } from '@fortawesome/free-solid-svg-icons';
+library.add(fas, faChessRook);
 
 interface AppProps {}
 interface AppState {

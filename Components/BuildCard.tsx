@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CardHeader from 'react-bootstrap/esm/CardHeader';
 import Schools from '../Data/Schools';
-import { forEach } from 'react-bootstrap/cjs/ElementChildren';
+
 
 Schools.martial_basic.entries;
 console.log(Schools.martial_basic[0].name);
