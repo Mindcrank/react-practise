@@ -4,15 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CardHeader from 'react-bootstrap/esm/CardHeader';
 import Schools from '../Data/Schools';
 
-Schools.martial_basic.entries;
-console.log(Schools.martial_basic[0].name);
+//console.log(Schools.martial_basic[0].name);
 
 var school_type = 'Martial School - Basic';
 var school_name = Schools.martial_basic[0].name;
 var school_desc = Schools.martial_basic[0].text;
 var school_augs = Schools.martial_basic[0].augments;
 
-function BuildCard() {
+function SchoolCard() {
   var element = (
     <Card style={{ 'max-width': '32rem' }}>
       <CardHeader>{school_type}</CardHeader>
@@ -46,4 +45,4 @@ function BuildCard() {
   return element;
 }
 
-export default BuildCard;
+export default SchoolCard;

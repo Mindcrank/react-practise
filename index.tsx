@@ -5,7 +5,7 @@ import './style.css';
 //My Components
 import Hello from './Components/Hello';
 import RandoObj from './Components/RandoObj';
-import BuildCard from './Components/BuildCard';
+import SchoolCard from './Components/SchoolCard';
 //Fontawesome SVG icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -31,7 +31,7 @@ class App extends Component<AppProps, AppState> {
         <Hello name={this.state.name} />
         <p>Start editing to see some magic happen :)fdsfsdf</p>
         <RandoObj />
-        <BuildCard />
+        <SchoolCard />
       </div>
     );
   }
