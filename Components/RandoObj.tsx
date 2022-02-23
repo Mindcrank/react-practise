@@ -1,3 +1,7 @@
 import React from 'react';
 
-export default ({ name }) => <h1>Hello {name}!</h1>;
+function Game() {
+  return <div>bingo bango chicken tango</div>;
+}
+
+export default Game;
