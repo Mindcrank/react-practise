@@ -6,7 +6,7 @@ var Schools = {
       augments: ['bulwark augment 1', 'bulwark augment 2'],
     },
     {
-      name: 'Zappy',
+      name: 'Zappy Zapper',
     },
   ],
 };
