@@ -11,9 +11,12 @@ function BuildCard() {
         <FontAwesomeIcon
           icon={['fas', 'chess-rook']}
           size="10x"
-          style={{'--fa-border-radius':"10% 40%"}}
           border
-
+          style={{
+            '--fa-border-radius': '20% 20%',
+            '--fa-border-width': '10px',
+            '--fa-border-style': 'solid dashed',
+          }}
         />
         <Card.Title>Bulwark</Card.Title>
         <Card.Text>
