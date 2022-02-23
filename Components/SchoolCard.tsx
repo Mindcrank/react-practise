@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Card, Button, Col, Row, ListGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CardHeader from 'react-bootstrap/esm/CardHeader';

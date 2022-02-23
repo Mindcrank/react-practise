@@ -1,14 +1,12 @@
-import React from 'react';
+import * as React from 'react';
+
 //Bootstrap
-import { Button } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 
-const NavigationElements = () => {
-  return <Navbar></Navbar>;
-};
-
 function NavigationElements() {
-  return <Navbar></Navbar>;
+  //const element = <div></div>;
+  const element = <Navbar></Navbar>;
+  return element;
 }
 
 export default NavigationElements;
