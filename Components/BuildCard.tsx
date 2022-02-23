@@ -2,6 +2,11 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CardHeader from 'react-bootstrap/esm/CardHeader';
+import Schools from '../Data/Schools';
+import { forEach } from 'react-bootstrap/cjs/ElementChildren';
+
+Schools.martial_basic.entries;
+console.log(Schools.martial_basic[0].name);
 
 function BuildCard() {
   var element = (
@@ -18,10 +23,10 @@ function BuildCard() {
             '--fa-border-style': 'solid dashed',
           }}
         />
-        <Card.Title>Bulwark</Card.Title>
+        <Card.Title>{Schools.martial_basic[0].name}</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {Schools.martial_basic[0].text} <br />
+          {Schools.martial_basic[0].augments}
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
