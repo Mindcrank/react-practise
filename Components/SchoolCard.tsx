@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Col, Row } from 'react-bootstrap';
+import { Card, Button, Col, Row, ListGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CardHeader from 'react-bootstrap/esm/CardHeader';
 import Schools from '../Data/Schools';
@@ -13,11 +13,11 @@ var school_augs = Schools.martial_basic[0].augments;
 
 function SchoolCard() {
   var element = (
-    <Card style={{ 'max-width': '32rem' }}>
+    <Card style={{ 'max-width': '48rem' }}>
       <CardHeader>{school_type}</CardHeader>
       <Card.Body>
         <Row>
-          <Col>
+          <Col md={'auto'}>
             <FontAwesomeIcon
               icon={['fas', 'chess-rook']}
               size="10x"
