@@ -28,7 +28,7 @@ function BuildCard() {
           {Schools.martial_basic[0].text} <br />
           {Schools.martial_basic[0].augments}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">A Button</Button>
       </Card.Body>
     </Card>
   );
