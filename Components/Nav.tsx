@@ -2,38 +2,62 @@ import * as React from 'react';
 
 //Bootstrap
 import Alert from 'react-bootstrap/Alert';
-/*
-class NavigationElements extends Component {
-  state = {};
-
-  render() {
-    // Return JSX code
-    //return <div> hello</div>;
-    return <Navbar>NAVIGATION IS HERE</Navbar>;
-  }
-}
-
-const NavigationElements: React.FC = () => {
-  //return <Navbar></Navbar>;
-  return <div></div>;
-};*/
+import {
+  Navbar,
+  Nav,
+  Container,
+  Offcanvas,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+} from 'react-bootstrap';
 
 function NavigationElements() {
   //const element = <div></div>;
   const element = (
-    <Alert variant="success">
-      <Alert.Heading>Hey, nice to see you</Alert.Heading>
-      <p>
-        Aww yeah, you successfully read this important alert message. This
-        example text is going to run a bit longer so that you can see how
-        spacing within an alert works with this kind of content.
-      </p>
-      <hr />
-      <p className="mb-0">
-        Whenever you need to, be sure to use margin utilities to keep things
-        nice and tidy.
-      </p>
-    </Alert>
+    <Navbar bg="light" expand={false}>
+      <Container fluid>
+        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+        <Navbar.Toggle aria-controls="offcanvasNavbar" />
+        <Navbar.Offcanvas
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+          placement="end"
+        >
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title id="offcanvasNavbarLabel">
+              Offcanvas
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav.Link href="#action1">Home</Nav.Link>
+              <Nav.Link href="#action2">Link</Nav.Link>
+              <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
+                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">
+                  Something else here
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+            <Form className="d-flex">
+              <FormControl
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+              />
+              <Button variant="outline-success">Search</Button>
+            </Form>
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
+      </Container>
+    </Navbar>
   );
   return element;
 }
