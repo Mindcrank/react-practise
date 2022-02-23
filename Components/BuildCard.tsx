@@ -1,10 +1,15 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function BuildCard() {
   var element = (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <FontAwesomeIcon
+        icon="fa-solid fa-chess-rook fa-border"
+        size="10x"
+        border="40% 10%"
+      />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
