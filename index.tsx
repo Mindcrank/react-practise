@@ -19,6 +19,7 @@ library.add(fas, faChessRook);
 
 interface AppProps {}
 interface AppState {
+  title: string;
   name: string;
 }
 
@@ -26,6 +27,7 @@ class App extends Component<AppProps, AppState> {
   constructor(props) {
     super(props);
     this.state = {
+      title: 'Welcome',
       name: 'NAMEname',
     };
   }
@@ -33,11 +35,9 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <Container fluid>
-        <NavigationElements />
+        <NavigationElements title={this.state.title} />
         <div>
-          <Hello name={this.state.name} />
-
-          <p>Start editing to see some magic happen :)fdsfsdf</p>
+          <p>body text</p>
           <RandoObj />
           <SchoolCard />
         </div>
